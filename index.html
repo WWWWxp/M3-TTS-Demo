@@ -455,75 +455,85 @@
                 <table class="w-100">
                     <thead>
                         <tr>
-                            <th class="text-start ps-4">Text</th>
-                            <th>Ground Truth</th>
-                            <th>SecoustiCodec<br>(1 kbps)</th>
-                            <th>SecoustiCodec<br>(0.27 kbps)</th>
+                          <th class="text-start ps-4">Text</th>
+                          <th>gt</th>
+                          <th>F5-TTS</th>
+                          <th>ZipVoice</th>
+                          <th>M3-TTS(VAE)</th>
+                          <th>M3-TTS(Fbank)</th>
                         </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                          <td class="text-column ps-4">无法对此作出评论，客人有事尽管吩咐！</td>
-                          <td><audio controls="" preload="auto"><source src="wav/gt/8.wav" /></audio></td>
-                          <td><audio controls="" preload="auto"><source src="wav/SecoustiCodec/semantic/8.wav" /></audio></td>
-                          <td><audio controls="" preload="auto"><source src="wav/SecoustiCodec_80hz/semantic/8.wav" /></audio></td>
-                        </tr>
-                        <tr>
-                          <td class="text-column ps-4">无法对此作出评论，客人有事尽管吩咐！</td>
-                          <td><audio controls="" preload="auto"><source src="wav/gt/8.wav" /></audio></td>
-                          <td><audio controls="" preload="auto"><source src="wav/SecoustiCodec/semantic/8.wav" /></audio></td>
-                          <td><audio controls="" preload="auto"><source src="wav/SecoustiCodec_80hz/semantic/8.wav" /></audio></td>
-                        </tr>
-                        <tr>
-                          <td class="text-column ps-4">无法对此作出评论，客人有事尽管吩咐！</td>
-                          <td><audio controls="" preload="auto"><source src="wav/gt/8.wav" /></audio></td>
-                          <td><audio controls="" preload="auto"><source src="wav/SecoustiCodec/semantic/8.wav" /></audio></td>
-                          <td><audio controls="" preload="auto"><source src="wav/SecoustiCodec_80hz/semantic/8.wav" /></audio></td>
-                        </tr>
-                        <tr>
-                          <td class="text-column ps-4">无法对此作出评论，客人有事尽管吩咐！</td>
-                          <td><audio controls="" preload="auto"><source src="wav/gt/8.wav" /></audio></td>
-                          <td><audio controls="" preload="auto"><source src="wav/SecoustiCodec/semantic/8.wav" /></audio></td>
-                          <td><audio controls="" preload="auto"><source src="wav/SecoustiCodec_80hz/semantic/8.wav" /></audio></td>
-                        </tr>
-                        <tr>
-                          <td class="text-column ps-4">无法对此作出评论，客人有事尽管吩咐！</td>
-                          <td><audio controls="" preload="auto"><source src="wav/gt/8.wav" /></audio></td>
-                          <td><audio controls="" preload="auto"><source src="wav/SecoustiCodec/semantic/8.wav" /></audio></td>
-                          <td><audio controls="" preload="auto"><source src="wav/SecoustiCodec_80hz/semantic/8.wav" /></audio></td>
-                        </tr>
-                        <tr>
-                          <td class="text-column ps-4">无法对此作出评论，客人有事尽管吩咐！</td>
-                          <td><audio controls="" preload="auto"><source src="wav/gt/8.wav" /></audio></td>
-                          <td><audio controls="" preload="auto"><source src="wav/SecoustiCodec/semantic/8.wav" /></audio></td>
-                          <td><audio controls="" preload="auto"><source src="wav/SecoustiCodec_80hz/semantic/8.wav" /></audio></td>
-                        </tr>
-                        <tr>
-                          <td class="text-column ps-4">无法对此作出评论，客人有事尽管吩咐！</td>
-                          <td><audio controls="" preload="auto"><source src="wav/gt/8.wav" /></audio></td>
-                          <td><audio controls="" preload="auto"><source src="wav/SecoustiCodec/semantic/8.wav" /></audio></td>
-                          <td><audio controls="" preload="auto"><source src="wav/SecoustiCodec_80hz/semantic/8.wav" /></audio></td>
-                        </tr>
-                        <tr>
-                          <td class="text-column ps-4">无法对此作出评论，客人有事尽管吩咐！</td>
-                          <td><audio controls="" preload="auto"><source src="wav/gt/8.wav" /></audio></td>
-                          <td><audio controls="" preload="auto"><source src="wav/SecoustiCodec/semantic/8.wav" /></audio></td>
-                          <td><audio controls="" preload="auto"><source src="wav/SecoustiCodec_80hz/semantic/8.wav" /></audio></td>
-                        </tr>
-                        <tr>
-                          <td class="text-column ps-4">无法对此作出评论，客人有事尽管吩咐！</td>
-                          <td><audio controls="" preload="auto"><source src="wav/gt/8.wav" /></audio></td>
-                          <td><audio controls="" preload="auto"><source src="wav/SecoustiCodec/semantic/8.wav" /></audio></td>
-                          <td><audio controls="" preload="auto"><source src="wav/SecoustiCodec_80hz/semantic/8.wav" /></audio></td>
-                        </tr>
-                        <tr>
-                          <td class="text-column ps-4">无法对此作出评论，客人有事尽管吩咐！</td>
-                          <td><audio controls="" preload="auto"><source src="wav/gt/8.wav" /></audio></td>
-                          <td><audio controls="" preload="auto"><source src="wav/SecoustiCodec/semantic/8.wav" /></audio></td>
-                          <td><audio controls="" preload="auto"><source src="wav/SecoustiCodec_80hz/semantic/8.wav" /></audio></td>
-                        </tr>
+                      </thead>
+                   <tbody>
 
-                    </tbody>
+                    <!-- 英文句子 1-4 -->
+                    <tr>
+                      <td class="text-column ps-4">It seemed the ordained order of things that dogs should work.</td>
+                      <td><audio controls preload="auto"><source src="github_en/1.gt.wav" /></audio></td>
+                      <td><audio controls preload="auto"><source src="github_en/1.F5-TTS.wav" /></audio></td>
+                      <td><audio controls preload="auto"><source src="github_en/1.ZipVoice.wav" /></audio></td>
+                      <td><audio controls preload="auto"><source src="github_en/1.VAE.wav" /></audio></td>
+                      <td><audio controls preload="auto"><source src="github_en/1.instruct_tts_v7_Fbank.wav" /></audio></td>
+                    </tr>
+                    <tr>
+                      <td class="text-column ps-4">Construction requires study and observation.</td>
+                      <td><audio controls preload="auto"><source src="github_en/2.gt.wav" /></audio></td>
+                      <td><audio controls preload="auto"><source src="github_en/2.F5-TTS.wav" /></audio></td>
+                      <td><audio controls preload="auto"><source src="github_en/2.ZipVoice.wav" /></audio></td>
+                      <td><audio controls preload="auto"><source src="github_en/2.VAE.wav" /></audio></td>
+                      <td><audio controls preload="auto"><source src="github_en/2.instruct_tts_v7_Fbank.wav" /></audio></td>
+                    </tr>
+                    <tr>
+                      <td class="text-column ps-4">She was one of several driven onto the beach.</td>
+                      <td><audio controls preload="auto"><source src="github_en/3.gt.wav" /></audio></td>
+                      <td><audio controls preload="auto"><source src="github_en/3.F5-TTS.wav" /></audio></td>
+                      <td><audio controls preload="auto"><source src="github_en/3.ZipVoice.wav" /></audio></td>
+                      <td><audio controls preload="auto"><source src="github_en/3.VAE.wav" /></audio></td>
+                      <td><audio controls preload="auto"><source src="github_en/3.instruct_tts_v7_Fbank.wav" /></audio></td>
+                    </tr>
+                    <tr>
+                      <td class="text-column ps-4">Why Born Enslaved!</td>
+                      <td><audio controls preload="auto"><source src="github_en/4.gt.wav" /></audio></td>
+                      <td><audio controls preload="auto"><source src="github_en/4.F5-TTS.wav" /></audio></td>
+                      <td><audio controls preload="auto"><source src="github_en/4.ZipVoice.wav" /></audio></td>
+                      <td><audio controls preload="auto"><source src="github_en/4.VAE.wav" /></audio></td>
+                      <td><audio controls preload="auto"><source src="github_en/4.instruct_tts_v7_Fbank.wav" /></audio></td>
+                    </tr>
+                
+                    <!-- 中文句子 5-8 -->
+                    <tr>
+                      <td class="text-column ps-4">因为我们悄悄走过，所以当时那些惊涛骇浪都烟消云散。</td>
+                      <td><audio controls preload="auto"><source src="github_zh/5.gt.wav" /></audio></td>
+                      <td><audio controls preload="auto"><source src="github_zh/5.F5-TTS.wav" /></audio></td>
+                      <td><audio controls preload="auto"><source src="github_zh/5.ZipVoice.wav" /></audio></td>
+                      <td><audio controls preload="auto"><source src="github_zh/5.VAE.wav" /></audio></td>
+                      <td><audio controls preload="auto"><source src="github_zh/5.instruct_tts_v7_Fbank.wav" /></audio></td>
+                    </tr>
+                    <tr>
+                      <td class="text-column ps-4">来到河边，蹦豆打开渔网一看，好失望呀。</td>
+                      <td><audio controls preload="auto"><source src="github_zh/6.gt.wav" /></audio></td>
+                      <td><audio controls preload="auto"><source src="github_zh/6.F5-TTS.wav" /></audio></td>
+                      <td><audio controls preload="auto"><source src="github_zh/6.ZipVoice.wav" /></audio></td>
+                      <td><audio controls preload="auto"><source src="github_zh/6.VAE.wav" /></audio></td>
+                      <td><audio controls preload="auto"><source src="github_zh/6.instruct_tts_v7_Fbank.wav" /></audio></td>
+                    </tr>
+                    <tr>
+                      <td class="text-column ps-4">自动驾驶将大幅提升出行安全，效率。</td>
+                      <td><audio controls preload="auto"><source src="github_zh/7.gt.wav" /></audio></td>
+                      <td><audio controls preload="auto"><source src="github_zh/7.F5-TTS.wav" /></audio></td>
+                      <td><audio controls preload="auto"><source src="github_zh/7.ZipVoice.wav" /></audio></td>
+                      <td><audio controls preload="auto"><source src="github_zh/7.VAE.wav" /></audio></td>
+                      <td><audio controls preload="auto"><source src="github_zh/7.instruct_tts_v7_Fbank.wav" /></audio></td>
+                    </tr>
+                    <tr>
+                      <td class="text-column ps-4">我们将为全球市场的可持续发展贡献力量。</td>
+                      <td><audio controls preload="auto"><source src="github_zh/8.gt.wav" /></audio></td>
+                      <td><audio controls preload="auto"><source src="github_zh/8.F5-TTS.wav" /></audio></td>
+                      <td><audio controls preload="auto"><source src="github_zh/8.ZipVoice.wav" /></audio></td>
+                      <td><audio controls preload="auto"><source src="github_zh/8.VAE.wav" /></audio></td>
+                      <td><audio controls preload="auto"><source src="github_zh/8.instruct_tts_v7_Fbank.wav" /></audio></td>
+                    </tr>
+                
+                  </tbody>    
                 </table>
             </div>
         </section>
