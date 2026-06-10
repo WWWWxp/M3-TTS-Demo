@@ -338,7 +338,7 @@
 </head>
 <body>
   <header>
-    <h1>M3-TTS: Multi-modal DiT Alignment & Mel-latent for Zero-shot High-fidelity Speech Synthesis</h1>
+    <h1>M3-TTS: Native Two-stream Multi-modal Diffusion Transformer for Zero-shot Speech Synthesis</h1>
   </header>
   
   <!-- <div class="authors"> -->
@@ -351,7 +351,7 @@
       <section class="section">
         <h2>Abstract</h2>
         <p>
-          NAR zero-shot TTS often relies on rigid duration modeling or pseudo-alignment, limiting prosodic expressiveness and increasing computational overhead. We propose M3-TTS, an efficient dual-stage MMDiT framework that establishes robust cross-modal correspondence. Self-Adaptive Joint Representation enables implicit monotonic alignment, enhancing both temporal modeling and pronunciation fidelity. Adaptive Distribution Modulator ensures explicit content-timbre disentanglement, while a Mel-VAE-based Distilled Latent Prior provides spatiotemporal compression—accelerating training threefold and enabling native 44.1 kHz synthesis. Extensive evaluations on Seed-TTS-eval demonstrate that M3-TTS attains SOTA performance, achieving the lowest WER of 1.36% for English and 1.33% for Chinese</p>
+          Zero-shot text-to-speech (TTS) must generate speech from text while preserving the speaker characteristics of a short reference utterance. Recent non-autoregressive systems improve decoding efficiency, but they often bridge the text--speech length mismatch with duration predictors, filler-token padding, or text upsampling, and inject reference speech through sequence-level conditioning. We propose M3-TTS, a multi-modal, multi-stream, and modulation-based diffusion Transformer for reference-conditioned masked acoustic generation. Its core design is a native two-stream architecture, termed Self-Adaptive Joint Representation (SAJR), where text tokens and speech representations keep their original lengths and interact through packed joint self-attention. M3-TTS further uses a joint-to-audio generation pipeline to separate cross-modal correspondence learning from acoustic refinement, together with AdaLN-style acoustic prompting to inject speaker information in a unified acoustic representation space. Experiments show that the FBank-based M3-TTS reaches 1.52% WER on English and 1.35% CER on Chinese in the 24kHz Seed-TTS comparison, while the Mel-VAE variant reduces RTF to 0.12.</p>
       </section>
 
       <body>
@@ -382,12 +382,12 @@
       </body>
 
       <!-- Model Architecture -->
-      <!-- <section class="section">
+      <section class="section">
         <h2>Model Architecture</h2>
         <figure>
             <img src="M3-TTS-Frame.png" alt="Model Architecture">
         </figure>
-    </section> -->
+    </section>
 
       <!-- Comparison Table -->
       <style>
