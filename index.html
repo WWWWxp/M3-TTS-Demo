@@ -354,21 +354,20 @@
           Zero-shot text-to-speech (TTS) must generate speech from text while preserving the speaker characteristics of a short reference utterance. Recent non-autoregressive systems improve decoding efficiency, but they often bridge the text--speech length mismatch with duration predictors, filler-token padding, or text upsampling, and inject reference speech through sequence-level conditioning. We propose M3-TTS, a multi-modal, multi-stream, and modulation-based diffusion Transformer for reference-conditioned masked acoustic generation. Its core design is a native two-stream architecture, termed Self-Adaptive Joint Representation (SAJR), where text tokens and speech representations keep their original lengths and interact through packed joint self-attention. M3-TTS further uses a joint-to-audio generation pipeline to separate cross-modal correspondence learning from acoustic refinement, together with AdaLN-style acoustic prompting to inject speaker information in a unified acoustic representation space. Experiments show that the FBank-based M3-TTS reaches 1.52% WER on English and 1.35% CER on Chinese in the 24kHz Seed-TTS comparison, while the Mel-VAE variant reduces RTF to 0.12.</p>
       </section>
 
+      <!--
       <body>
-        <!-- Resource links section below author information -->
-        <!-- <div class="resource-container">
-          <div class="resource-card arxiv"> 
-            <div class="resource-icon"> 
-                <i class="fas fa-file-alt"></i> 
-            </div> 
-            <h3 class="resource-title">arXiv Paper</h3> 
-            <a href="https://arxiv.org/abs/2512.04720" class="resource-link" target="_blank"> 
-                View Paper 
-            </a> 
-        </div>  -->
-          
-          <!-- GitHub card -->
-          <!-- <div class="resource-card github">
+        <div class="resource-container">
+          <div class="resource-card arxiv">
+            <div class="resource-icon">
+                <i class="fas fa-file-alt"></i>
+            </div>
+            <h3 class="resource-title">arXiv Paper</h3>
+            <a href="https://arxiv.org/abs/2512.04720" class="resource-link" target="_blank">
+                View Paper
+            </a>
+          </div>
+
+          <div class="resource-card github">
             <div class="resource-icon">
               <i class="fab fa-github"></i>
             </div>
@@ -376,10 +375,10 @@
             <a href="https://github.com/WWWWxp/M3-TTS" class="resource-link" target="_blank">
               Access Repository
             </a>
-          </div> -->
-          
+          </div>
         </div>
       </body>
+      -->
 
       <!-- Model Architecture -->
       <section class="section">
